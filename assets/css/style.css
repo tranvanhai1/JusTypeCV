@@ -1,0 +1,565 @@
+*{ padding: 0;
+margin: 0;
+box-sizing: border-box;}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+/*
+1.từ ngoài vào trong
+2.từ trên xuống dưới
+3.tổng quan đến chi tiết 
+ */
+/* 
+1. vị trí
+2.kích thước:(width,height)
+3.màu sắc
+4.kiểu dáng(Kiểu chữ, hình tròn, vuông,...
+ */
+ /* https://www.w3schools.com/w3css/tryw3css_templates_band.htm */
+
+
+.text-white{
+    color: #fff !important; 
+}
+
+.row{
+    margin: auto;
+    width: 800px;
+    max-width: 100%;
+}
+
+.rowtwo{
+    width: auto;
+    
+}
+
+.rowtwo::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mt-8{
+    margin-top: 8px;
+}
+
+.mt-15{
+    margin-top: 15px;
+    /* float: right; */
+    padding: 8px 16px;
+    border: none;
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.col{
+    float: left;
+    padding: 0 8px;
+}
+
+.col-third{
+    width: 33.33333%;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.clear{
+    clear: both;
+}
+
+#header {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 46.4px;
+    background: #000;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav> li{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav> li> a{
+    text-transform: uppercase;
+    color: #fff; 
+    padding: 0 24px;
+    width: 100%;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav .nav-icon-down{
+    font-size: 14px;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46.4px;
+    display: inline-block;
+}
+
+#nav> li:hover> a,
+#nav .subnav li:hover{
+    color:#000;
+    background-color: #ccc;
+}
+
+
+#nav .subnav{
+    min-width: 160px;
+    display: none;
+    box-shadow: 0 0 14px rgba(29, 4, 4, 0.4);
+    position: absolute;
+    top:46px;
+    left:0;
+    background-color: #fff;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav li a{
+    line-height: 38.4px;
+    padding: 5px 16px;
+    color: black;
+
+}
+
+#header .search-button:hover{
+    cursor: pointer;
+    background-color:#f44336;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color:#000;
+}
+
+#header .search-button,
+#header .mobile-menu-btn{
+    float: right;
+    padding: 1px 24px;
+}
+
+.btn{
+    -webkit-appearance: none;
+}
+
+
+#header .search-icon,
+#header .menu-icon{
+    line-height: 46.4px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#slider {
+    position: relative;
+    padding-top:50% ;
+    margin-top: 46.4px;
+    background: url('../img/anh\ chang\ guitar.jpg') top center/ cover no-repeat;
+    
+}
+
+#slider .text-slider{
+    position: absolute;
+    color:#fff;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-shadow: 0 0 5px #000;
+}
+
+#slider .text-h{
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+#slider .text-p{
+    margin: 15px 0;
+    
+}
+
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px 10px 16px;
+}
+
+#content .section-heading,
+#content .section-sub-heading{
+    text-align:center;
+}
+
+#content .section-heading{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    margin: 15px 0;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+#content .member-list{
+    padding: 32px 0 70px 0;
+}
+
+#content .member-name{
+    
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#content .member-ing{
+    vertical-align: middle;
+    width: 154px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+
+/* tour section */
+
+.tour-section{
+    background-color: #000;
+    padding-bottom: 64px;
+}
+
+.ticket-list{
+    background-color: #fff;
+    margin-top:40px;
+    list-style-type: none;
+}
+
+.ticket-list li{
+    font-size: 15px;
+    color: #757575;
+    padding: 10px 16px;
+    border-bottom: solid #ddd 1px;
+}
+
+.ticket-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 8px;
+    margin-left: 16px;
+    line-height: 22px;
+
+}
+
+.ticket-list .quanciti{
+    float: right;
+    background-color: #000;
+    width: 22px;
+    height: 24px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 16px;
+    margin-top: -3px;
+    
+}
+
+
+
+.places-list{
+    /* margin: auto; */
+    padding: 32px 8px;
+    font-size: 15px;
+    /* width: 800px; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.places-img{
+    width: 100%;
+    display: block;
+
+}
+
+.places-img:hover{
+    opacity: 0.6;
+}
+
+.places-body{
+    background-color: #fff;
+    padding: 16px 16px 25px 16px;
+
+}
+
+.places-heading{
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+.places-time{
+    margin: 15px 0;
+    color: #757575;
+
+}
+
+.places-desc{
+    margin: 15px 0;
+    line-height: 1.4;
+
+}
+
+.places-buy-btn{
+    margin-bottom: -5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    padding: 8px 16px;
+    display:inline-block;
+    border: none;
+}
+
+.places-buy-btn:hover{
+    color:#000;
+    background-color: #ccc;
+}
+
+.modal{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: ModalFadeIn ease 0.6s;
+}
+
+.modal-close:hover{
+    opacity: 1;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    height: 52px;
+    padding: 14px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.modal-header{
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 6px;
+}
+
+.modal .modal-text{
+    margin-left: 14px;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+
+}
+
+.modal-input{
+    margin-bottom: 20px;
+    border:1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+}
+
+#buy-tickets{
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#buy-tickets:hover{
+    background-color: #ccc;
+    color: black;
+
+}
+
+.modal-footer{
+    padding: 16px ;
+    text-align: right;
+}
+
+.helpp{
+    color: #2196F3;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info i[class*="ti-"]{
+    width:30px;
+    display: inline-block;
+}
+
+.contact-info a{
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
+}
+
+.contact-form,
+.form-control{
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-email{
+    font-size: 15px;
+}
+
+.mt-15:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.map-section img{
+    width: 100%;
+}
+
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list{
+    font-size: 23px;
+}
+
+#footer .social-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright,
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .social-list a:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copyright{
+    margin: 15px 0;
+}
+
+.contact-hai{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px 100px 16px !important;
+}
+
+#mobile-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+
+}
+
+@keyframes ModalFadeIn{
+    From{
+        transform: translateY(-150px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JusType CV</title>
+    <link rel="stylesheet" href="./web.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/0410929cc9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./html2pdf.bundle.min.js"></script>
+    <script src="./web.js"></script>
+</head>
+<body>
+    <!-- phan dau trang -->
+    <div id="head">
+
+        <!-- thanh dieu huong -->
+        <div id="nav">
+
+        </div>
+        
+        <!-- Thanh tien trinh -->
+        <div class="progressBar">
+            <h1 class="p_Bar"></h1>
+        </div>
+    </div>
+
+    <!-- intro web -->
+    <div id="intro_web">
+        <div class="back_right">
+            <img src="./assets/webname-removebg-preview.png" alt="" class="img_web_name">
+            <img src="./assets/CV-removebg-preview.png" alt="" class="img_web_name_CV">
+            <img src="./assets/haoquang-removebg-preview.png" alt="" class="light img_web_name_CV">
+            <img src="./assets/slogando-removebg-preview.png" alt="" class="slogan_web">
+            <!-- <input class="input_name" type="text" placeholder="Type your name" value="">
+            <input class="input_prof" type="text" placeholder="type apply position" value=""> -->
+            <input type="submit" class="button button_submit" value="start">
+            <p>Develop by HKT - HacKẻ Team</p>
+        </div>
+    </div>
+
+    <!-- phan giua trang -->
+    <div id="content">
+
+        <!-- CV -->
+        <div id="CV" class="add_left">
+
+            <!-- phần nền CV -->
+            <div class="background_cv">
+               <div class="background_block block1"></div>
+               <div class="background_block block2"></div>
+               <div class="background_block block3"></div>
+               <div class="background_block block4"></div> 
+            </div>
+
+            <!-- thong tin trong CV -->
+            <div id="CV_information">
+                <div id="CV_intro">
+
+                    <div class="picture_user">
+                        <img class="user_img" src="./assets/IMG_2044.png" alt="">
+                    </div>
+
+                    <div class="hafl_cicle"></div>
+                    
+                    <div id="add_size"></div>
+                    <div class="board_information">
+                        <h1 class="text_name">Full name</h1>
+                        <h2 class="prof_title">Position</h2>
+                        <p class="intro_user"> Áp dụng những kinh nghiệm về kỹ năng lập trình và thiết kế để trở thành một developer chuyên nghiệp, mang đến nhiều giá trị cho khách hàng. Từ đó giúp công ty phát triển những sản phẩm tiềm năng và chất lượng đến cho người dùng.</p>
+                        <div class="line_"></div>
+                        <div id="contact">
+
+                            <div class="mail contact_element">
+                                <i class="icon fas fa-envelope"></i>
+                                <p class="ct ad_mail">52100718@studen.tdtu.edu.vn</p>
+                            </div>
+
+                            <div class="phone contact_element">
+                                <i class="icon fas fa-phone-alt"></i>
+                                <p class="ct ad_phone">0216584356</p>
+                            </div>
+
+                            <div class="dayOfBirth contact_element">
+                                <i class="icon fas fa-calendar-day"></i>
+                                <p class="ct ad_dayOfBirth">9/12/1996</p>
+                            </div>
+
+                            <div class="address contact_element">
+                                <i class="icon fas fa-map-marker-alt"></i>
+                                <p class="ct ad_address">26 khu 12, tt Gia Ray, Xuân Lộc, Đồng Nai</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="CV_exper">
+                    <div class="infor_title infor_title_exper">
+                        <h2>Experience</h2>
+                        <div class="cicle_decor"></div>
+                        <div class="line_decor"></div>
+                    </div>
+                    <ul class="CV_exper_informations" id="CV_experience">
+                        <li><h1>Công ty Garena</h1><p>(6/2016 to 12/2020)</p><p>Nhân viên sáng tạo nội dung</p></li>
+                        <li><h1>Công ty FPT</h1><p>(1/20121 to 8/2021)</p><p>Trưởng phòng thiết kế phần mềm</p></li>
+                        <li><h1>Công ty Green Tea</h1><p>(10/2021 to 12/2021)</p><p>Trường phòng điều hành trang web công ty</p></li>
+                    </ul>
+                    <img class="pattern_decor" src="./assets/hoavan.png" alt="">
+                </div>
+                <div id="CV_infor">
+                    <div class="box_button">
+                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <img class="tangle_decor" src="./assets/tamgiacxanh.png" alt="">
+                    <img class="stars_decor" src="./assets/haingoisao.png" alt="">
+                    <img class="square_decor" src="./assets/hinhthoivang.png" alt="">
+                    <img class="tangle_decor_under" src="./assets/tamgiacxanh.png" alt="">
+                    <img class="square_decor_under" src="./assets/hinhthoivang.png" alt="">
+                    <div class="main_information">
+                        <div class="infor_user">
+                            <div class="infor_title">
+                                <h2>Education</h2>
+                                <div class="cicle_decor"></div>
+                                <div class="line_decor"></div>
+                            </div>
+                            <ul class="CV_exper_informations" id="CV_edu">
+                                <li>
+                                    <h4>Đại Học Tôn Đức Thắng</h4>
+                                    <p>(2020-2024)</p>
+                                    <p>Tốt nghiệp loại: Giỏi</p>
+                                </li>
+                                <li>
+                                    <h4>Đại Học Công Nghệ Thông Tin (2020-2024)</h4>
+                                    <p>Tốt nghiệp loại: xuất sắc</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="infor_user">
+                            <div class="infor_title">
+                                <h2>Project</h2>
+                                <div class="cicle_decor"></div>
+                                <div class="line_decor"></div>
+                            </div>
+                            <ul class="CV_exper_informations" id="CV_pro">
+                                <li>
+                                    <h4>Develop web CV (11/2021)</h4>
+                                    <p>Tham gia cuộc thi thiết kế, làm web CV cho trường</p>
+                                </li>
+                                <li>
+                                    <h4>Develop web game (5/2022)</h4>
+                                    <p>Sáng tạo ra web game The Acame</p>
+                                </li>
+                                <li>
+                                    <h4>Tham gia phát triển Fallo (12/2023)</h4>
+                                    <p>Tham gia phát tiển dự án Fallo, ứng dụng lập thời gia biểu trên mobile</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="infor_user">
+                            <div class="infor_title">
+                                <h2>Certificates</h2>
+                                <div class="cicle_decor"></div>
+                                <div class="line_decor"></div>
+                            </div>
+                            <ul class="CV_exper_informations" id="CV_cert">
+                                <li>
+                                    <h4>Bằng tốt nghiệp loại giỏi Khoa CNTT trường đh Tôn Đức Thắng (11/2020)</h4>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <h4>Chứng chỉ hoàn thành khóa học trên CodeAcademy (15/2/2022)</h4>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="infor_user">
+                            <div class="infor_title">
+                                <h2>Achiements</h2>
+                                <div class="cicle_decor"></div>
+                                <div class="line_decor"></div>
+                            </div>
+                            <ul class="CV_exper_informations" id="CV_achi">
+                                <li>
+                                    <h4>Giải nhất cuộc thi làm web game của đại học Tôn Đức Thắng (16/3/2018)</h4>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="infor_user">
+                            <div class="infor_title">
+                                <h2>Skills</h2>
+                                <div class="cicle_decor"></div>
+                                <div class="line_decor"></div>
+                            </div>
+                            <ul class="CV_exper_informations" id="CV_ski">
+                                <li>
+                                    <h4>Kĩ năng thuyết trình</h4>
+                                    <div class="bar_outside">
+                                        <div class="bar_inside"></div>
+                                    </div>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- bang chinh sua -->
+        <div id="table_add_infor">
+            <div class="nav_bar">
+                <img src="./assets/webname-removebg-preview.png" alt="" class="CV_name_nav">
+                <img src="./assets/CV-removebg-preview.png" alt="" class="CV_CV_name">
+            </div>
+
+            <div class="form_add">
+                <div class="form_add_picture">
+                    <div class="block_file_up">
+                        <label class="custom-file-upload">
+                            <input class="form_choose" type='file' onchange="readURL(this);" accept="image/*"/>
+                            <i class="fas fa-image"></i>
+                        </label>
+                    </div>
+                    <h5 class="title_add_form">Add your image</h5>
+                </div>
+                <div class="form_add_ele form_add_name">
+                    <h6>Name</h6>
+                    <input type="text" value="" class="name input_name_infor" maxlength="40" pattern="[A-Za-z]">
+                    <div class="line_decor_yellow"></div> 
+                </div>
+                <div class="form_add_ele form_add_position">
+                    <h6>Position</h6>
+                    <input type="text" value="" class="position input_name_infor" >
+                    <div class="line_decor_yellow"></div> 
+                </div>
+                <div class="form_add_ele form_add_intro">
+                    <h6>Introduction</h6>
+                    <input type="text" value="" class="intro input_name_infor" maxlength="411">
+                    <div class="line_decor_yellow"></div> 
+                </div>
+                <div class="form_add_ele form_add_contact">
+                    <h6>CONTACT</h6>
+                    <div class="add_contact">
+                        <h6>Email</h6>
+                        <input type="email" value="" class="email input_contact_infor" maxlength="30">
+                        <div class="line_decor_yellow"></div> 
+                    </div>
+                    <div class="add_contact">
+                        <h6>Phone</h6>
+                        <input type="number" value="" class="numberPhone input_contact_infor" maxlength="22">
+                        <div class="line_decor_yellow"></div>
+                    </div>
+                    <div class="add_contact">
+                        <h6>Date of birth</h6>
+                        <input type="date" value="" class="DoB input_contact_infor" pattern="\d{2}-\d{2}-\d{4}" maxlength="12">
+                        <div class="line_decor_yellow"></div>
+                    </div>
+                    <div class="add_contact">
+                        <h6>Address</h6>
+                        <input type="text" value="" class="addresss input_contact_infor" maxlength="64">
+                        <div class="line_decor_yellow"></div>
+                    </div>
+                </div>
+                <div class="form_add_ele form_add_element_exper">
+                    <div class="button_submit_add Experience"><H4>Add Experience</H4></div>
+                    <input type="text" id="add_infor_input_title_exper" class="add_infor_input_title" placeholder="Company/position you worked" required>
+                    <input type="month" id="add_infor_input_exper_date_st" class="add_infor_input_date" placeholder="Date-start" required value="12-2020">
+                    <input type="month" id="add_infor_input_exper_date_en" class="add_infor_input_date" placeholder="Date-end" required value="12-2020">
+                    <input type="text" id="add_infor_input_exper" class="add_infor_input" placeholder="Description">
+                    <input type="submit" class="add_infor_button button_exper" value="Add" onclick="append1()">
+                </div>
+                <div class="form_add_ele form_add_element_edu">
+                    <div class="button_submit_add Education"><H4>Add Education</H4></div>
+                    <input type="text" class="add_infor_input_title" id="add_infor_input_title_edu" placeholder="University/College" required >
+                    <input type="month" id="add_infor_input_edu_date_st" class="add_infor_input_date" placeholder="Date-start" required value="12-2020">
+                    <input type="month" id="add_infor_input_edu_date_en" class="add_infor_input_date" placeholder="Date-end" required value="12-2020">
+                    <input type="text" class="add_infor_input" id="add_infor_input_edu" placeholder="Major/detail">
+                    <input type="submit" class="add_infor_button button_edu" value="Add" onclick="append2()">
+                </div>
+                <div class="form_add_ele form_add_element_pro">
+                    <div class="button_submit_add Project"><H4>Add Project</H4></div>
+                    <input type="text" class="add_infor_input_title" id="add_infor_input_title_pro" placeholder="Project name" required >
+                    <input type="month" id="add_infor_input_pro_date_st" class="add_infor_input_date" placeholder="Date-start" required value="12-2020">
+                    <input type="month" id="add_infor_input_pro_date_en" class="add_infor_input_date" placeholder="Date-end" required value="12-2020">
+                    <input type="text" class="add_infor_input" id="add_infor_input_pro" placeholder="Description">
+                    <input type="submit" class="add_infor_button button_pro" value="Add" onclick="append3()">
+                </div>
+                <div class="form_add_ele form_add_element_cert">
+                    <div class="button_submit_add Certificates"><H4>Add Certificates</H4></div>
+                    <input type="text" class="add_infor_input_title" id="add_infor_input_title_cert" placeholder="Certificates name">
+                    <input type="date" id="add_infor_input_cert_date" class="add_infor_input_date" placeholder="Received date" required value="5-12-2020">
+                    <input type="text" class="add_infor_input" id="add_infor_input_cert" placeholder="Description">
+                    <input type="submit" class="add_infor_button button_cert" value="Add" onclick="append4()">
+                </div>
+                <div class="form_add_ele form_add_element_achi">
+                    <div class="button_submit_add Achiements"><H4>Add Achiements</H4></div>
+                    <input type="text" class="add_infor_input_title" id="add_infor_input_title_achi" placeholder="Achiements name">
+                    <input type="date" id="add_infor_input_achi_date" class="add_infor_input_date" placeholder="Received date" required value="5-12-2020">
+                    <input type="text" class="add_infor_input" id="add_infor_input_achi" placeholder="Description (rank)">
+                    <input type="submit" class="add_infor_button button_achi" value="Add" onclick="append5()">
+                </div>
+                <div class="form_add_ele form_add_element_ski">
+                    <div class="button_submit_add Skills"><H4>Add Skills</H4></div>
+                    <input type="text" class="add_infor_input_title" id="add_infor_input_title_ski" placeholder="Type skill" >
+                    <input list="list_skill_class" id="list_skills_level">
+                    <datalist id="list_skill_class">
+                        <option value="Beginer"></option>
+                        <option value="Intermediate"></option>
+                        <option value="Advanced level"></option>
+                        <option value="Expert"></option>
+                    </datalist>
+                    <input type="submit" class="add_infor_button button_ski" value="Add" onclick="append6()">
+                </div>
+            </div>
+        </div>
+        <!-- nut bonus -->
+        <div class="button_turnback">
+            <i class="fas fa-eye-slash"></i>
+            <div class="button_turnback_real">
+                <i class="fas fa-angle-right"></i>
+            </div>
+        </div>
+        
+        <!-- menu -->
+        <div class="div_around">
+            <div class="button_menu_bar">
+                <div class="remove_button">
+                    <div class="remove_CV" title="Remove all content in CV"><i class="fas fa-redo-alt"></i></div>
+                    <div class="button_nav review_cv" title="review"><i class="fas fa-eye"></i></div>
+                    <div class="button_nav print_cv" title="print"><i class="fas fa-print"></i></div>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div id="button_menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- bang canh bao -->
+    <div id="table_warning">
+        <div class="padding_table">
+            <i class="fas fa-exclamation"></i>
+            <h1 class="warning_title">WARNING</h1>
+            <h1 class="title_warning">NEXT STAGE IS REMOVE ALL YOUR INFORMATION</h1>
+            <div class="button_box">
+                <div class="button_conti"><i class="fas fa-check"></i></div>
+                <div class="button_cancel"><i class="fas fa-times"></i></div>
+            </div>
+        </div>
+    </div>
+    <!-- phan cuoi trang -->
+    <div id="footer">
+        
+    </div>
+    <div id="loader"></div>
+</body>
+
+</html>

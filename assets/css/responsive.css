@@ -1,0 +1,125 @@
+/* PC */
+@media (min-width:1024px) {
+    
+}
+
+/* tablet vs mobile */
+@media (max-width:63.9375em){
+    #header{
+        height: 48.4px;
+    }
+
+    .btn{
+        font-size: 16px;
+    }
+
+    .places-buy-btn,
+    .mt-15{
+        padding: 16px 27px;
+    }
+
+    #nav li a{
+        line-height: 48.4px;
+    }
+
+    .contact-form,
+    .form-control{
+        padding: 14px 13px;
+    }
+
+    .contact-info{
+        line-height: 2;
+    }
+
+    #footer .social-list{
+        font-size: 36px;
+    }
+
+    #footer .social-list a{
+        margin: 0 8px;
+    }
+
+    #footer .copyright{
+        font-size: 18px;
+        padding: 14px 10px;
+    }
+}
+
+
+/* tablet */
+@media (max-width:63.9375em) and (min-width:46.25em){
+    
+}
+
+/* mobile */
+@media (max-width:46.1875em) {
+    .s-full-width,
+    .s-col-full{
+        width: 100% !important;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    .s-mt-8{
+        margin-top: 8px;
+    }
+
+    #nav{
+        display: block;
+    }
+
+    #nav> li:first-child{
+        display: inline-block;
+    }
+
+    #nav> li> a{
+        padding: 1px 24px;
+    }
+
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+        padding: 0 36px;
+    }
+
+    #nav .subnav li a{
+        color: #fff;
+    }
+
+    #nav> li{
+        display: block;}
+
+    #header .search-button{
+        display: none;
+    }
+
+    #mobile-menu{
+        display: block;
+    }
+
+    #content .member-ing{
+        width: 60%;
+    }
+
+    #tour .places-item{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .contact-form,
+    .form-control{
+        height: 41.4px;
+        font-size: 15px;
+    }
+
+    .contact-email,
+    .contact-info{
+        padding: 0 !important;
+    }
+
+    .contact-info{
+        margin-bottom: 16px;
+    }
+}

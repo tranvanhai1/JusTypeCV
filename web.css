@@ -31,6 +31,7 @@ html{
 }
 
 body{
+    background-color: rgba(250, 248, 248, 0.925);
     width: 100%;
     height: 100%;
 }
@@ -57,7 +58,7 @@ body{
     /* box-shadow: 2px 2px 2px rgba(255, 122, 1, 1); */
 }
 
-.fa-envelope, .fa-calendar-day{
+.contact_element .fa-envelope, .fa-calendar-day{
     color: rgba(83, 4, 115, 1) ;
 }
 
@@ -66,16 +67,34 @@ body{
   width: 100%;
   position: fixed;
   z-index: 20;
-  background-color: rgba(255, 255, 255, 0.425);
+  background-color: rgb(255, 255, 255);
   top: 0;
 }
 
-.nav{
+#nav{
+    padding-top: 5px;
+    padding-left: 60px;
     width: 100%;
-    height: 10%;
-    background-color: chartreuse;
+    height: 100%;
     position: absolute;
     z-index: 100;
+}
+
+#nav h1{
+  letter-spacing: 2px;
+  font-size: 20px;
+  display: inline-block;
+  font-family: fontpart2;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+#nav p{
+  display: inline-block;
+  height: 15px;
 }
 
 /* phan nen den intro cua web */
@@ -179,7 +198,7 @@ body{
 
 .back_right p,
 .back_right h1{
-    display: none;
+    opacity: 0;
     position: absolute;
     z-index: 20;
 }
@@ -261,16 +280,27 @@ body{
 
 .review_templet{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     font-size: 70px;
     position: absolute;
     top: 44px;
-    right: 164px;
+    right: 68px;
     background-color: rgba(240, 234, 234, 0.192);
     width: 18%;
     height: 0%;
     z-index: 21;
     opacity: 0;
+}
+
+.review_templet p,
+.review_templet h3{
+  margin-left: 50px;
+  font-size: 15px;
+}
+
+.review_templet p{
+  margin-left: 90px;
 }
 
 .flicker-out-1 {
@@ -528,7 +558,7 @@ body{
     padding-right: unset;
 }
 
-.ct{
+.contact_element .ct{
     max-width: 90%;
     font-size: 13px;
     display: inline-block;
@@ -540,7 +570,7 @@ body{
     position: relative;
 }
 
-.ad_address{
+.contact_element .ad_address{
     position: absolute;
     top: 13px;
     max-width: 81%;
@@ -573,8 +603,6 @@ body{
     justify-content: start;
 }
 
-
-
 .CV_exper_informations li{
     position: relative;
     margin-top: 0px;
@@ -584,8 +612,8 @@ body{
 
 #CV_infor .CV_exper_informations li::before{
     content: "";
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
     position: absolute;
     top: 0px;
     left: -25px;
@@ -601,7 +629,7 @@ body{
     width: 3px;
     height: 100%;
     top: 3px;
-    left: -17px;
+    left: -18px;
     background-color: #631781;
     z-index: 0;
 }
@@ -1051,11 +1079,39 @@ body{
 }
 
 .nav_bar{
+  display: flex;
+  justify-content: end;
   position: fixed;
   width: calc(32% - 0.1px);
-  height: 7%;
+  height: 9%;
   background-color: #FFD800;
   z-index: 20;
+}
+
+.button_chg{
+  cursor: pointer;
+  margin-right: 25px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: #000;
+  width: 19%;
+  height: 67%;
+  font-size: 25px;
+  padding-top: 10px;
+  color: #FFD800;
+}
+
+.button_chg i{
+  height: 25px;
+  display: inline-block;
+}
+
+.button_chg:hover i{
+  transform-origin: center;
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
 }
 
 #table_add_infor .form_add{
@@ -1388,6 +1444,92 @@ option{
     opacity: 1;
 }
 
+.height_remove{
+  display: none;
+}
+
+#table_remove .remove_elements{
+  padding: 3px 20px 0 25px;
+  display: flex;
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  margin: 20px 0;
+}
+
+#table_remove .remove_elements h1{
+  margin-left: 25px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+#table_remove .remove_elements input{
+  margin-top: 6px;
+  border-radius: 50px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(202, 202, 202);
+}
+
+.container:hover input ~ .checkmark {
+  background-color: rgb(114, 114, 114);
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #FFD800;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 5.2px;
+  top: 1px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 /* menu */
 
 .div_around{
@@ -1547,7 +1689,7 @@ option{
   width: 100%;
   position: fixed;
   z-index: 20;
-  background-color: rgba(255, 255, 255, 0.425);
+  background-color: #fff;
   bottom: 0;
 }
 
@@ -1581,6 +1723,156 @@ option{
 .slide-up{
     bottom: 0px !important;
 }  
+
+.scale-out-center {
+	-webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.puff-in-center {
+	-webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear alternate both;
+	        animation: color-change-2x 2s linear alternate both;
+}
+
+.color-change-2x2 {
+	-webkit-animation: color-change-2x2 0.7s linear alternate both;
+	        animation: color-change-2x2 0.7s linear alternate both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-12-19 4:27:56
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation color-change-2x
+ * ----------------------------------------
+ */
+ @-webkit-keyframes color-change-2x {
+  0% {
+    background: rgba(250, 248, 248, 0.925);
+  }
+  100% {
+    background: #f7dd4d;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: rgba(250, 248, 248, 0.925);
+  }
+  100% {
+    background: #f7dd4d;
+  }
+}
+
+@-webkit-keyframes color-change-2x2 {
+  0% {
+    background: #f7dd4d;
+  }
+  100% {
+    background: rgba(250, 248, 248, 0.925);
+  }
+}
+@keyframes color-change-2x2 {
+  0% {
+    background: #f7dd4d;
+  }
+  100% {
+    background: rgba(250, 248, 248, 0.925);
+  }
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-12-18 23:18:15
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation puff-in-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-12-18 23:11:46
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-out-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+}
 
 /* ----------------------------------------------
  * Generated by Animista on 2021-12-15 1:11:50
@@ -2155,7 +2447,7 @@ input[type=number] {
         color-adjust: exact !important;  /*Firefox*/
     }
 
-     #intro_web, #table_add_infor, .button_turnback, .div_around, #menu{
+     #intro_web, #table_add_infor, .button_turnback, .div_around, #menu, #head, #footer{
          position: unset;
          display: none !important;
      }
@@ -2183,7 +2475,6 @@ input[type=number] {
     /* CV */
     #CV{
         left: unset !important;
-        display: block;
         margin: auto;
         box-sizing: border-box;
         width: 210mm;
@@ -2198,7 +2489,6 @@ input[type=number] {
       
       margin-top: unset !important ;
       left: unset !important;
-      display: block;
       margin: auto;
       box-sizing: border-box;
       width: 210mm;
@@ -2207,6 +2497,30 @@ input[type=number] {
       z-index: 0;
       box-shadow: none!important;
   }
+
+  #CV2{
+    left: unset !important;
+    margin: auto;
+    box-sizing: border-box;
+    width: 210mm;
+    height: 297.2mm;
+    background-color: #fff;
+    z-index: 0;
+    box-shadow: none !important;
+    margin-bottom: unset !important;
+}
+
+#CV2p2{
+  margin-top: unset !important ;
+  left: unset !important;
+  margin: auto;
+  box-sizing: border-box;
+  width: 210mm;
+  height: 296.6mm !important;
+  background-color: #fff;
+  z-index: 0;
+  box-shadow: none!important;
+}
     
  } 
 

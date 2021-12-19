@@ -461,8 +461,7 @@ function append5(){
             $("#add_infor_input_title_achi").val("")
             $("#add_infor_input_achi_date").val("")
             if($("#add_infor_input_achi").val() != ""){
-                $("#CV_achi li:last-child").append(tx3)
-                $("#CV_achi2 li:last-child").append(tx3)
+                $("#CV_achi li:last-child, #CV_achi2 li:last-child").append(tx3)
                 $("#add_infor_input_achi").val("")
             }
         }
@@ -1022,6 +1021,7 @@ $(document).ready(function(){
         $(".tag_add").remove()
         $(".input_name_infor").not($(".name")).val("")
         $(".input_contact_infor").val("")
+
     })
 })
 
